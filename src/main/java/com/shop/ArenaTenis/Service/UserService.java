@@ -1,5 +1,6 @@
 package com.shop.ArenaTenis.Service;
 
+import com.shop.ArenaTenis.Dto.RegisterRequest;
 import com.shop.ArenaTenis.Model.User;
 import com.shop.ArenaTenis.Repository.UserRepository;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -18,15 +19,26 @@ public class UserService {
         this.encoder = encoder;
     }
 
-    public User createAdmin() {
-        if (repo.findByUsername("admin").isPresent()) return null;
+    public User register(RegisterRequest req) {
+        if (repo.findByUsername(req.getUsername()).isPresent()) {
+            throw new RuntimeException("Username already taken");
+        }
+        if (repo.findByEmail(req.getEmail()).isPresent()) {
+            throw new RuntimeException("Email already in use");
+        }
 
-        User admin = new User();
-        admin.setUsername("admin");
-        admin.setPassword(encoder.encode("admin123"));
-        admin.setRole("ROLE_ADMIN");
+        User user = new User();
+        user.setUsername(req.getUsername());
+        user.setPassword(encoder.encode(req.getPassword()));
+        user.setEmail(req.getEmail());
+        user.setFirstName(req.getFirstName());
+        user.setLastName(req.getLastName());
+        user.setAge(req.getAge());
+        user.setPhoneNumber(req.getPhoneNumber());
+        user.setAddress(req.getAddress());
+        user.setRole("ROLE_USER");
 
-        return repo.save(admin);
+        return repo.save(user);
     }
 
     public Optional<User> findByUsername(String username) {
