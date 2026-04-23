@@ -3,6 +3,7 @@ package com.shop.ArenaTenis.Controller;
 import com.shop.ArenaTenis.Config.JwtUtil;
 import com.shop.ArenaTenis.Dto.LoginRequest;
 import com.shop.ArenaTenis.Dto.RegisterRequest;
+import com.shop.ArenaTenis.Model.User;
 import com.shop.ArenaTenis.Service.UserService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -32,12 +33,13 @@ public class AuthController {
     @PostMapping("/login")
     public String login(@RequestBody LoginRequest req) {
         authenticationManager.authenticate(
-                new UsernamePasswordAuthenticationToken(
-                        req.getUsername(),
-                        req.getPassword()
-                )
+                new UsernamePasswordAuthenticationToken(req.getUsername(), req.getPassword())
         );
-        return jwtUtil.generateToken(req.getUsername());
+
+        User user = userService.findByUsername(req.getUsername())
+                .orElseThrow(() -> new RuntimeException("User not found"));
+
+        return jwtUtil.generateToken(req.getUsername(), user.getRole());
     }
 
     @PostMapping("/register")
