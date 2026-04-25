@@ -1,7 +1,7 @@
-package com.shop.ArenaTenis.Service;
+package com.shop.AceZone.Service;
 
-import com.shop.ArenaTenis.Model.Product;
-import com.shop.ArenaTenis.Repository.ProductRepository;
+import com.shop.AceZone.Model.Product;
+import com.shop.AceZone.Repository.ProductRepository;
 import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;

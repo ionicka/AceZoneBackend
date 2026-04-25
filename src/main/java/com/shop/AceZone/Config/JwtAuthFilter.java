@@ -1,6 +1,6 @@
-package com.shop.ArenaTenis.Config;
+package com.shop.AceZone.Config;
 
-import com.shop.ArenaTenis.Service.CustomUserDetailsService;
+import com.shop.AceZone.Service.CustomUserDetailsService;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

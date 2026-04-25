@@ -1,4 +1,4 @@
-package com.shop.ArenaTenis;
+package com.shop.AceZone;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

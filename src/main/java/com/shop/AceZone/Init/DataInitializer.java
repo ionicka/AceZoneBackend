@@ -1,7 +1,7 @@
-package com.shop.ArenaTenis.Init;
+package com.shop.AceZone.Init;
 
-import com.shop.ArenaTenis.Model.User;
-import com.shop.ArenaTenis.Repository.UserRepository;
+import com.shop.AceZone.Model.User;
+import com.shop.AceZone.Repository.UserRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.crypto.password.PasswordEncoder;

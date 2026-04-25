@@ -1,7 +1,7 @@
-package com.shop.ArenaTenis.Service;
+package com.shop.AceZone.Service;
 
-import com.shop.ArenaTenis.Model.User;
-import com.shop.ArenaTenis.Repository.UserRepository;
+import com.shop.AceZone.Model.User;
+import com.shop.AceZone.Repository.UserRepository;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;

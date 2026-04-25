@@ -1,7 +1,7 @@
-package com.shop.ArenaTenis.Controller;
+package com.shop.AceZone.Controller;
 
-import com.shop.ArenaTenis.Model.Product;
-import com.shop.ArenaTenis.Service.ProductService;
+import com.shop.AceZone.Model.Product;
+import com.shop.AceZone.Service.ProductService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;

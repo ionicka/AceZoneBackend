@@ -1,4 +1,4 @@
-package com.shop.ArenaTenis.Config;
+package com.shop.AceZone.Config;
 
 import io.jsonwebtoken.*;
 import io.jsonwebtoken.security.Keys;

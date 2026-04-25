@@ -1,4 +1,4 @@
-package com.shop.ArenaTenis.Model;
+package com.shop.AceZone.Model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

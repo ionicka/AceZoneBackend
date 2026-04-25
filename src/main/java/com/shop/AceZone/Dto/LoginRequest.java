@@ -1,4 +1,4 @@
-package com.shop.ArenaTenis.Dto;
+package com.shop.AceZone.Dto;
 
 import lombok.Data;
 

@@ -1,8 +1,8 @@
-package com.shop.ArenaTenis.Service;
+package com.shop.AceZone.Service;
 
-import com.shop.ArenaTenis.Dto.RegisterRequest;
-import com.shop.ArenaTenis.Model.User;
-import com.shop.ArenaTenis.Repository.UserRepository;
+import com.shop.AceZone.Dto.RegisterRequest;
+import com.shop.AceZone.Model.User;
+import com.shop.AceZone.Repository.UserRepository;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 

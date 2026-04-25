@@ -1,6 +1,6 @@
-package com.shop.ArenaTenis.Repository;
+package com.shop.AceZone.Repository;
 
-import com.shop.ArenaTenis.Model.User;
+import com.shop.AceZone.Model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

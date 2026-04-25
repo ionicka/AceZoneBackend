@@ -1,14 +1,13 @@
-package com.shop.ArenaTenis.Controller;
+package com.shop.AceZone.Controller;
 
-import com.shop.ArenaTenis.Config.JwtUtil;
-import com.shop.ArenaTenis.Dto.LoginRequest;
-import com.shop.ArenaTenis.Dto.RegisterRequest;
-import com.shop.ArenaTenis.Model.User;
-import com.shop.ArenaTenis.Service.UserService;
+import com.shop.AceZone.Config.JwtUtil;
+import com.shop.AceZone.Dto.LoginRequest;
+import com.shop.AceZone.Dto.RegisterRequest;
+import com.shop.AceZone.Model.User;
+import com.shop.AceZone.Service.UserService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
