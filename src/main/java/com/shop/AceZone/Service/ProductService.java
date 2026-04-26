@@ -16,7 +16,7 @@ public class ProductService {
     }
 
     public List<Product> getAll() {
-        return repo.findByAvailableTrue();
+        return repo.findByAvailableTrueOrderByIdDesc();
     }
 
     public Product create(Product product) {
@@ -35,6 +35,8 @@ public class ProductService {
         p.setImageUrl(updated.getImageUrl());
         p.setStock(updated.getStock());
         p.setAvailable(updated.getAvailable());
+        p.setRentable(updated.getRentable());
+        p.setRentPrice(updated.getRentPrice());
         return repo.save(p);
     }
 

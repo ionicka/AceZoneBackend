@@ -26,4 +26,5 @@ public class Product {
     private Boolean rentable = false;
     @Column(nullable = false)
     private Boolean available = true;
+    private Double rentPrice;
 }

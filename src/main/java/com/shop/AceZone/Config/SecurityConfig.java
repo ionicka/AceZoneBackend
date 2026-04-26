@@ -58,9 +58,10 @@ public class SecurityConfig {
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers("/api/auth/**").permitAll()
                         .requestMatchers("/uploads/**").permitAll()
-                        .requestMatchers("/api/cart/**").permitAll()
-                        .requestMatchers("/api/favourites/**").permitAll()
-                        .requestMatchers(HttpMethod.GET, "/api/products/**").permitAll()
+                        .requestMatchers("/api/cart/**").authenticated()
+                        .requestMatchers("/api/favourites/**").authenticated()
+                        .requestMatchers(HttpMethod.GET, "/api/products/**").authenticated()
+                        .requestMatchers("/api/rentals/**").authenticated()
                         .anyRequest().authenticated()
                 )
                 .sessionManagement(session ->
