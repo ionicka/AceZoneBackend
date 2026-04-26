@@ -18,12 +18,12 @@ public class Product {
     private String name;
     private String description;
     private Double price;
-    private Double oldPrice;
     private String category;
     private String brand;
     private String imageUrl;
     private Integer stock;
-
+    @Column(nullable = false)
+    private Boolean rentable = false;
     @Column(nullable = false)
     private Boolean available = true;
 }

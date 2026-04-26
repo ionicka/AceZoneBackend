@@ -29,7 +29,7 @@ public class ProductService {
         p.setName(updated.getName());
         p.setDescription(updated.getDescription());
         p.setPrice(updated.getPrice());
-        p.setOldPrice(updated.getOldPrice());
+
         p.setCategory(updated.getCategory());
         p.setBrand(updated.getBrand());
         p.setImageUrl(updated.getImageUrl());
