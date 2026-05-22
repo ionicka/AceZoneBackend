@@ -1,0 +1,64 @@
+# AceZone Backend
+
+Backend service for the AceZone full-stack sports equipment shopping and rental platform.
+
+## Overview
+
+The backend was developed using Java Spring Boot and provides REST API endpoints for authentication, product management, shopping cart operations, favorites management, and admin functionalities.
+
+## Features
+
+- User authentication and authorization
+- Secure login system using Spring Security
+- RESTful API architecture
+- Product management system
+- Shopping cart functionality
+- Favorites management
+- Admin role with product editing permissions
+- Product image upload support
+- SQL database integration
+- CRUD operations for products and users
+
+## Tech Stack
+
+- Java
+- Spring Boot
+- Spring Security
+- REST API
+- SQL Database
+- Maven
+
+## Authentication & Security
+
+- User registration and login
+- Role-based authorization
+- Protected API endpoints
+- Secure password handling using Spring Security
+
+## Product Management
+
+Admins can:
+- Add new products
+- Edit product information
+- Delete products
+- Upload product images
+
+## Database
+
+The application uses an SQL relational database for storing:
+- Users
+- Products
+- Favorites
+- Shopping cart data
+- Orders and rentals
+
+## API Testing
+
+API endpoints were tested using:
+- Postman
+
+
+## Running the Project
+
+```bash
+mvn spring-boot:run
